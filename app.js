@@ -26,7 +26,7 @@ app.use(
     session({
         resave: true,
         saveUninitialized: true,
-        secret: process.env.SESSION_SECRET || "This is not a secret, friend."
+        secret: process.env.SESSION_SECRET || "This is a secret, friend."
     })
 );
 app.use(passport.initialize());
